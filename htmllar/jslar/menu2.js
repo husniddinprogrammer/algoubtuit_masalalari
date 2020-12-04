@@ -450,4 +450,108 @@ document.querySelector('.n50tugma').addEventListener('click', function () {
     }
     n50javob.value =j50;
 })
-
+//51
+document.querySelector('.n51tugma').addEventListener('click', function () {
+    let n51x = document.querySelector('.n51x');
+    let n51y = document.querySelector('.n51y');
+    let n51javob = document.querySelector('.n51javob');
+    let x51 = parseFloat(n51x.value);
+    let y51 = parseFloat(n51y.value);
+    if ((x51>=-1 && x51<=1 && y51<=0 && y51>=-20) || (x51>=-1 && x51<=1 && Math.abs(x51)>=y51)){
+        j51='yes';
+    }
+    else {
+        j51='no';
+    }
+    n51javob.value =j51;
+})
+//52
+document.querySelector('.n52tugma').addEventListener('click', function () {
+    let n52x = document.querySelector('.n52x');
+    let n52y = document.querySelector('.n52y');
+    let n52javob = document.querySelector('.n52javob');
+    let x52 = parseFloat(n52x.value);
+    let y52 = parseFloat(n52y.value);
+    if ((y52<=-x52 && x52<=0 && x52>=-1 && y52>=0) || (x52>=-1.5 && x52<=-1 && y52<=2*x52+3 && y52>=0) || (x52>=-2 && x52<=1 && y52>=(x52-1)/3 && y52<=0 && y52<=2*x52+3)) {
+        j52='yes';
+    }  
+    else {
+        j52='no';
+    }
+    n52javob.value =j52;
+})
+//53
+document.querySelector('.n53tugma').addEventListener('click', function () {
+    let n53x = document.querySelector('.n53x');
+    let n53y = document.querySelector('.n53y');
+    let n53javob = document.querySelector('.n53javob');
+    let x53 = parseFloat(n53x.value);
+    let y53 = parseFloat(n53y.value);
+    if ((Math.abs(x53)<=2 && (y53>=1) && y53<=1.5) ||(Math.abs(x53)<=1 && y53>=Math.abs(x53) && y53<=1)){
+        j53='yes';
+    }  
+    else {
+        j53='no';
+    }
+    n53javob.value =j53;
+})
+//54
+document.querySelector('.n54tugma').addEventListener('click', function () {
+    let n54x = document.querySelector('.n54x');
+    let n54y = document.querySelector('.n54y');
+    let n54javob = document.querySelector('.n54javob');
+    let x54 = parseFloat(n54x.value);
+    let y54 = parseFloat(n54y.value);
+    if (Math.sqrt(x54*x54+y54*y54)<=2 && Math.sqrt(x54*x54+y54*y54)>=1 && y54>=0) {
+        j54='yes';
+    }
+    else {
+        j54='no';
+    }
+    n54javob.value =j54;
+})
+//55
+document.querySelector('.n55tugma').addEventListener('click', function () {
+    let n55x = document.querySelector('.n55x');
+    let n55y = document.querySelector('.n55y');
+    let n55javob = document.querySelector('.n55javob');
+    let x55 = parseFloat(n55x.value);
+    let y55 = parseFloat(n55y.value);
+    if (Math.sqrt(x55*x55+y55*y55)<=1) {
+        j55='yes';
+    }
+    else {
+        j55='no';
+    }
+    n55javob.value =j55;
+})
+//56
+document.querySelector('.n56tugma').addEventListener('click', function () {
+    let n56x = document.querySelector('.n56x');
+    let n56y = document.querySelector('.n56y');
+    let n56javob = document.querySelector('.n56javob');
+    let x56 = parseFloat(n56x.value);
+    let y56 = parseFloat(n56y.value);
+    if (Math.sqrt(x56*x56+y56*y56)<=1 && Math.sqrt(x56*x56+y56*y56)>=0.5) {
+        j56='yes';
+    }
+    else {
+        j56='no';
+    }
+    n56javob.value =j56;
+})
+//57
+document.querySelector('.n57tugma').addEventListener('click', function () {
+    let n57x = document.querySelector('.n57x');
+    let n57y = document.querySelector('.n57y');
+    let n57javob = document.querySelector('.n57javob');
+    let x57 = parseFloat(n57x.value);
+    let y57 = parseFloat(n57y.value);
+    if (Math.abs(x57)<=1 && Math.abs(y57)<=1) {
+        j57='yes';
+    }
+    else {
+        j57='no';
+    }
+    n57javob.value =j57;
+})
